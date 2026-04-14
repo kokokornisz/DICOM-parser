@@ -1,0 +1,5 @@
+*/5 * * * * /usr/bin/python3 /home/azureuser/Documents/dcm-to-csv/parse_dicom.py >> /home/azureuser/Documents/dcm-to-csv/logs/parse_log.txt 2>&1
+
+*/6 * * * * /usr/bin/python3 /home/azureuser/Documents/dcm-to-csv/csv_upload.py >> /home/azureuser/Documents/dcm-to-csv/logs/upload_log.txt 2>&1
+
+*/6 * * * * /usr/bin/python3 /home/azureuser/Documents/dcm-to-csv/jpg_upload.py >> /home/azureuser/Documents/dcm-to-csv/logs/upload_log.txt 2>&1
