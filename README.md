@@ -32,7 +32,7 @@ Aby system działał poprawnie, wymagana jest następująca struktura katalogów
    * Pobiera przekonwertowane zdjęcia medyczne `.jpg` z katalogu `photo/`.
    * Przesyła nowe pliki do dedykowanego kontenera `photo` w usłudze Azure Blob Storage.
 
-4. **`do wklejenia w crontab.txt`**
+4. **`crontab.txt`**
    * Zawiera wpisy harmonogramu zadań systemu Linux (`crontab`).
    * Uruchamia `parse_dicom.py` co 5 minut.
    * Uruchamia skrypty przesyłające `csv_upload.py` i `jpg_upload.py` co 6 minut, zapewniając minimalne opóźnienie potrzebne na ukończenie procesu ekstrakcji danych.
